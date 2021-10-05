@@ -39,6 +39,9 @@ title: Jogo da Cobrinha
 	gen_food();
 
 	document.addEventListener('keydown', change_direction);
+	window.addEventListener('close', function() {
+		dataLayer.push({event: game-finished, score: score});
+	});
 
 	function main() {
 
