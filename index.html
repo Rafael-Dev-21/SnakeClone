@@ -43,7 +43,7 @@ title: Jogo da Cobrinha
 		if(has_game_ended()) return;
 		changing_direction = false;
 		setTimeout(function onTick(){
-			clearBoard();
+			clearCanvas();
 			drawFood();
 			move_snake();
 			drawSnake();
@@ -121,7 +121,7 @@ title: Jogo da Cobrinha
 		const goingRight = dx === 10;
 		const goingLeft = dx === -10;
 
-		if(keyPressed === KEY_LEFT && !goingRight) {
+		if(keyPressed === LEFT_KEY && !goingRight) {
 			dx = -10;
 			dy = 0;
 		}
