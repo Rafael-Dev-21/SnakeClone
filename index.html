@@ -9,6 +9,8 @@ title: Jogo da Cobrinha
 	const board_background = 'white';
 	const snake_col = 'lightblue';
 	const snake_border = 'darkblue';
+	const food_col = 'lightgreen';
+	const food_border = 'darkgreen';
 
 	let snake = [
 		{x: 200, y: 200},
@@ -72,8 +74,8 @@ title: Jogo da Cobrinha
 	}
 
 	function drawSnakePart(snakePart) {
-		snakeboard_ctx.fillStyle = "lightblue";
-		snakeboard_ctx.strokeStyle = "darkblue";
+		snakeboard_ctx.fillStyle = snake_col;
+		snakeboard_ctx.strokeStyle = snake_border;
 		snakeboard_ctx.fillRect(snakePart.x, snakePart.y, 10, 10);
 		snakeboard_ctx.strokeRect(snakePart.x, snakePart.y, 10, 10);
 	}
@@ -109,7 +111,7 @@ title: Jogo da Cobrinha
 
 	function change_direction(event) {
 		const LEFT_KEY = 37;
-		const RIGHT_LEY = 39;
+		const RIGHT_KEY = 39;
 		const UP_KEY = 38;
 		const DOWN_KEY = 40;
 
