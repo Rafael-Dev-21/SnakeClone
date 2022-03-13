@@ -2,4 +2,4 @@
 # SnakeClone
 um clone do jogo da cobrinha
 
-<https://rafael-dev-21.netlify.app/snake/>
+<https://rafael-dev-21.github.io/snakeclone/>
