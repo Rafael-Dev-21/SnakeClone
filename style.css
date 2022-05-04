@@ -1,0 +1,41 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+#gameCanvas {
+  width: 100%;
+}
+
+#score {
+  color: blue;
+  font-size: 1.5em;
+}
+
+.screen {
+  width: clamp(200px, 100%, 500px);
+  height: clamp(200px, 100%, 500px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen h1 {
+  font-size: 3rem;
+}
+
+.btn {
+  width: clamp(100px, 50%, 250px);
+  padding: .5rem;
+}
