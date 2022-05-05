@@ -87,13 +87,12 @@ window.onload = function() {
     }
     changing_direction = false;
     setTimeout(function onTick() {
+      requestAnimationFrame(main);
+      
       clearCanvas();
       drawFood();
       move_snake();
       drawSnake();
-
-      main();
-
     }, 100);
   }
 
