@@ -2,4 +2,4 @@
 # SnakeClone
 um clone do jogo da cobrinha
 
-<https://rafael-dev-21.github.io/snakeclone/>
+<https://rafael-dev-21.github.io/SnakeClone/>
